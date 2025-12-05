@@ -23,7 +23,5 @@ public class Ejercicio62 {
         } else if (longi1 == longi2) {
             System.out.println("Las dos cadenas son igual de largas");
         }
-
     }
-
 }
