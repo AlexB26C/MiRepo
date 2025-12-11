@@ -22,9 +22,9 @@ public class Ejercicio67 {
             posicion = Frase.indexOf(palabra, posicion + 1);
         }
         if (veces == 0){
-            System.out.println(palabra + " No esta en la frase");
+            System.out.println("\"palabra\"" + " No esta en la frase");
         } else {
-            System.out.println(palabra + " Esta " + veces + " veces en la frase");
+            System.out.println("\"" + palabra + "\"" + " Esta " + veces + " veces en la frase");
         }
     }
 }
