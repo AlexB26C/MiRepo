@@ -1,4 +1,4 @@
-package ejerciciosProgramacionRepasoTema5y6;
+package ejerciciosprogramacionlibro.RepasoTema5y6;
 
 import java.util.Arrays;
 import java.util.Scanner;

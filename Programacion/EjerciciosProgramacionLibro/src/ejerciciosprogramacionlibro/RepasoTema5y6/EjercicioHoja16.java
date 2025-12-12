@@ -1,8 +1,8 @@
-package ejerciciosProgramacionRepasoTema5y6;
+package ejerciciosprogramacionlibro.RepasoTema5y6;
 
 import java.util.Scanner;
 
-public class EjercicioHoja17 {
+public class EjercicioHoja16 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         
@@ -28,8 +28,8 @@ public class EjercicioHoja17 {
     static char codifica(char conjunto1[], char conjunto2[], char c){
         
         for (int i = 0; i < conjunto1.length; i++){
-            if (c == conjunto2[i]){
-                c = conjunto1[i];
+            if (c == conjunto1[i]){
+                c = conjunto2[i];
                 return c;
             }
         }
