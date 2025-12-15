@@ -2,15 +2,15 @@ package ejerciciosprogramacionlibro.RepasoTema5y6;
 
 import java.util.Scanner;
 
-public class EjercicioHoja16 {
+public class EjercicioHoja18 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         
         char conjunto1[] = {'e', 'i', 'k', 'm', 'p', 'q', 'r', 's', 't', 'u', 'v'};
         char conjunto2[] = {'p', 'v', 'i', 'u', 'm', 't', 'e', 'r', 'k', 'q', 's'};
         
-        System.out.println("Dime una frase y la codifico: ");
-        String palabra = sc.nextLine();
+        System.out.println("Dime una palabra y la codifico: ");
+        String palabra = sc.next();
         
         palabra = palabra.toLowerCase();
         
