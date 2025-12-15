@@ -10,17 +10,17 @@ public class EjercicioHoja16 {
         char conjunto2[] = {'p', 'v', 'i', 'u', 'm', 't', 'e', 'r', 'k', 'q', 's'};
         
         System.out.println("Dime una frase y la codifico: ");
-        String palabra = sc.nextLine();
+        String frase = sc.nextLine();
         
-        palabra = palabra.toLowerCase();
+        frase = frase.toLowerCase();
         
-        char[] ArrayPalabra = palabra.toCharArray();
+        char[] ArrayFrase = frase.toCharArray();
         
         String palabraNueva = "";
         
-        for (int i = 0; i < palabra.length(); i++){
-            ArrayPalabra[i] = codifica(conjunto1, conjunto2, ArrayPalabra[i]);
-            palabraNueva = palabraNueva + ArrayPalabra[i];
+        for (int i = 0; i < frase.length(); i++){
+            ArrayFrase[i] = codifica(conjunto1, conjunto2, ArrayFrase[i]);
+            palabraNueva = palabraNueva + ArrayFrase[i];
         }
         System.out.println(palabraNueva);
     }

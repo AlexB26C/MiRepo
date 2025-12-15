@@ -19,13 +19,13 @@ public class EjercicioHoja17 {
         String palabraNueva = "";
         
         for (int i = 0; i < palabra.length(); i++){
-            ArrayPalabra[i] = codifica(conjunto1, conjunto2, ArrayPalabra[i]);
+            ArrayPalabra[i] = decodifica(conjunto1, conjunto2, ArrayPalabra[i]);
             palabraNueva = palabraNueva + ArrayPalabra[i];
         }
         System.out.println(palabraNueva);
     }
     
-    static char codifica(char conjunto1[], char conjunto2[], char c){
+    static char decodifica(char conjunto1[], char conjunto2[], char c){
         
         for (int i = 0; i < conjunto1.length; i++){
             if (c == conjunto2[i]){
