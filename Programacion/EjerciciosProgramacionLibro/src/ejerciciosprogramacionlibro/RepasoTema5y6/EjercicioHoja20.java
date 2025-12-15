@@ -8,29 +8,51 @@ public class EjercicioHoja20 {
         Scanner sc = new Scanner(System.in);
         String PalabraIntentos = "";
 
-        System.out.print("Jugador 1 di una palabra: ");
+        System.out.print("Jugador A. Dime una palabra: ");
         String PalabraAcertar = sc.next();
-        PalabraAcertar.toLowerCase();
-        
+        PalabraAcertar = PalabraAcertar.toLowerCase();
+
         for (int i = 0; i < PalabraAcertar.length(); i++) {
             PalabraIntentos = PalabraIntentos + "-";
         }
-        System.out.println(PalabraIntentos);
 
-        
+        char ArrayPalabraIntento[] = PalabraIntentos.toCharArray();
         char ArrayPalabraAcertar[] = PalabraAcertar.toCharArray();
-        
-        System.out.println("Jugador B. Dime una letra: ");
-        char letra = sc.next();
 
         int intentos = 7;
-        while (intentos != 0) {
+        boolean ganado = false;
+
+        do {
+            System.out.println("Jugador B. Dime una letra: ");
+            char letra = sc.next().toLowerCase().charAt(0);
+            boolean encontrada = false;
             for (int i = 0; i < PalabraIntentos.length(); i++) {
-                if (letra ArrayPalabraAcertar[i]){
-                    int pos = PalabraAcertar.indexOf(letra);
-                    PalabraIntentos.replace(PalabraIntentos.charAt(pos), letra);
+                if (letra == ArrayPalabraAcertar[i]) {
+                    ArrayPalabraIntento[i] = letra;
+                    encontrada = true;
                 }
             }
+            
+            if (!encontrada) {
+                intentos--;
+            }
+            
+            ganado = true;
+            for (int i = 0; i < ArrayPalabraIntento.length; i++) {
+                System.out.print(ArrayPalabraIntento[i]);
+                if (ArrayPalabraIntento[i] == '-') {
+                    ganado = false;
+                }
+            }
+            
+            System.out.println("");
+            System.out.println("Te quedan " + intentos + " intentos");
+        } while (intentos != 0 && !ganado);
+        
+        if(ganado){
+            System.out.println("Has acertado la palabra");
+        } else {
+            System.out.println("Se te han acabado los intentos. HAS PERDIDO");
         }
     }
 }
