@@ -28,5 +28,4 @@ public class Ejercicio13Hoja {
             System.out.println("No lo has escrito en Javaviano");
         }
     }
-    
 }
