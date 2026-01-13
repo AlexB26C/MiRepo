@@ -1,4 +1,4 @@
-package segundotrimestreprogramacion;
+package CuentaCorriente;
 
 import java.util.Scanner;
 

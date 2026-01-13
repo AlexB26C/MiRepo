@@ -1,4 +1,4 @@
-package segundotrimestreprogramacion;
+package CuentaCorriente;
 
 public class CuentaCorriente {
 

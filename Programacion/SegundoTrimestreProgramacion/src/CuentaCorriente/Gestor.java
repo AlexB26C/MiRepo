@@ -1,4 +1,4 @@
-package segundotrimestreprogramacion;
+package CuentaCorriente;
 public class Gestor {
     static private String Telefono;
     public String NombreGestor;
@@ -28,7 +28,6 @@ public class Gestor {
         System.out.println("Nombre: " + NombreGestor);
         System.out.println("Telefono: " + Telefono);
         System.out.println("Immporte Maximo: " + importeMaximo + " euros");
-    }
-            
+    }     
 }
 
