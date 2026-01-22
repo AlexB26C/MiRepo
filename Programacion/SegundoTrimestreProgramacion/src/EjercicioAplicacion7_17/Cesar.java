@@ -15,7 +15,7 @@ public class Cesar {
             
             }
             arrayPalabraCifrada[i] = ArrayACifrar[i + numeroCodificar];
-            palabraCifrada ;
         }
+        return null;
     }
 }
